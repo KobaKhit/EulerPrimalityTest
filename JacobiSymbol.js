@@ -1,6 +1,7 @@
 // Computes the Jacobi symbol for any integers a and b greater or equal to zero
 // Author: Fred Richman
 // Retrieved from <http://math.fau.edu/richman/jacobi.htm>
+// Modified by: Koba Khitalishvili
 
 function jacobiSymbol(m, n) {
     var a = new Object();
