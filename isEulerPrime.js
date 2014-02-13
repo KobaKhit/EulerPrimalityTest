@@ -13,7 +13,6 @@ function jacobi(a, b) {
     else if (a == 1) {
         var jac = 1
     }
-
     // a is even
     else if (a % 2 == 0) {
         if (b % 8 == 1 || b % 8 == 7) {
