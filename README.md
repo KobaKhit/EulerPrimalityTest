@@ -14,6 +14,6 @@ http://www.mathworks.com/matlabcentral/fileexchange/24672-jacobi-and-legendre-sy
 
 isEulerPrime.js is the code for Euler's  primality test that I wrote.
 First, the program randomly picks base a. Second, it computes  the Jacobi(a,p), and then determines whether 
-pow(a,(p-1)/2) is equivalent to Jacobi(a,p) mod p. If it is equivalent then p is probably prime. If it is not equivalent than p is composite. The accuracy of the test increases as you try more different bases a. If you check all bases a from 1 to p and the equivalence condition is true in every case then p is certainly prime. If the conition fails at least once then p is composite.
+pow(a,(p-1)/2) is equivalent to Jacobi(a,p) mod p. If it is equivalent then p is probably prime. If it is not equivalent than p is composite. The accuracy of the test increases as you try different bases a. If you check all bases a from 1 to p that is all numbers in the range (1,p) and the equivalence condition is true in every case then p is certainly prime. If the condition fails at least once then p is composite.
 
 
