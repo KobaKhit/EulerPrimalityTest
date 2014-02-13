@@ -1,4 +1,4 @@
-// Computes the Jacobi symbol for any integers a and b greater or equal to zero
+// Computes the Jacobi symbol for any integers a and b greater than or equal to zero
 // Author: Fred Richman
 // Retrieved from <http://math.fau.edu/richman/jacobi.htm>
 // Modified by: Koba Khitalishvili
