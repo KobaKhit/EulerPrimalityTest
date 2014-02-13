@@ -4,7 +4,7 @@ This repo contains codes for computing the Jacobi symbol and executing the Solov
 
 
 
-JacobiSymbol and JacobiSymbol1 are two different ways of computing the [Jacobi symbol](http://en.wikipedia.org/wiki/Jacobi_symbol) in javascript.
+JacobiSymbol.js and JacobiSymbol1.js are two different ways of computing the [Jacobi symbol](http://en.wikipedia.org/wiki/Jacobi_symbol) in javascript.
 
 JacobiSymbol code was developed by Fred Richman. I retrieved and modified the code from:
 http://math.fau.edu/richman/
