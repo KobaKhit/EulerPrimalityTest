@@ -1,4 +1,4 @@
-//Computes jacobi symbol for any integers a and b
+// Computes jacobi symbol for any integers a and b
 // Author:Petter Strandmark
 // Original language: Matlab
 // Retrieved from: <http://www.mathworks.com/matlabcentral/fileexchange/24672-jacobi-and-legendre-symbol/content/jacobi.m>
