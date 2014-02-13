@@ -1,4 +1,4 @@
-// This code tests an integer p for primality using the Euler critetion.
+// This code tests an integer p for primality using the Euler critetion for bases 2 and 3.
 // Author: Koba Khitalishvili
 // Date: 2/13/2014
 // Third party code: Peter Strandmark
@@ -41,7 +41,7 @@ function jacobi(a, b) {
 function isPrimeEuler(p) {
     var power = (p - 1) / 2;
     var res = ""
-    a = ceil(random() - 0.5) // random base a
+    a = ceil(random() - 0.5) + 2 // randomly picks base 2 or 3
     baseMod = pow(a, power) % p;
     var jacMod = jacobi(a, p) % p
     if (baseMod == p - 1) {
