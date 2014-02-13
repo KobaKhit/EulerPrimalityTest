@@ -1,4 +1,8 @@
-function jac(m, n) {
+// Computes the Jacobi symbol for any integers a and b greater or equal to zero
+// Author: Fred Richman
+// Retrieved from <http://math.fau.edu/richman/jacobi.htm>
+
+function jacobiSymbol(m, n) {
     var a = new Object();
     a[0] = 1;
     a[1] = m;
@@ -12,7 +16,9 @@ function jac(m, n) {
         var sign = a[0];
         var m = a[1];
         var n = a[2];
-
+        
+        if( n <= 0 || n % 2 == 0){return 0}
+        
         if (m > n - 1) {
             m = m % n;
 
