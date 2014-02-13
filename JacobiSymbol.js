@@ -50,4 +50,4 @@ function jac(m, n) {
     }
     return jacobi(a)
 }
-jac(13, 7)
+
