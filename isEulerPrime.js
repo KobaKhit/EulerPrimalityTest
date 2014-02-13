@@ -1,6 +1,6 @@
-// This code tests a number p greater than or equal to zero for primality using the Euler critetion.
+// This code tests an integer p for primality using the Euler critetion.
 
-//Computes the Jacobi symbol
+//Computes the Jacobi symbol using the code from jacobiSymbol1.js file
 function jacobi(a, b) {
     if (b % 2 == 0 || b <= 0) {
         return 0
