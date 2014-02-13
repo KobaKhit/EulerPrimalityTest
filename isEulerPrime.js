@@ -1,4 +1,7 @@
 // This code tests an integer p for primality using the Euler critetion.
+// Author: Koba Khitalishvili
+// Date: 2/13/2014
+// Third party code: Peter Strandmark
 
 //Computes the Jacobi symbol using the code from jacobiSymbol1.js file
 function jacobi(a, b) {
