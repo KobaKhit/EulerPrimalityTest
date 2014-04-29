@@ -1,4 +1,4 @@
-// This code tests an integer p for primality using the Euler critetion for bases 2 and 3.
+// This code tests an integer p for primality using the Euler critetion.
 // Author: Koba Khitalishvili
 // Date: 2/13/2014
 // Third party code: Peter Strandmark
