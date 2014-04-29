@@ -1,5 +1,3 @@
-![latex](http://latex.codecogs.com/gif.latex?Jacobi(a,p)&space;\mod&space;p)
-![latex](http://latex.codecogs.com/gif.latex?Jacobi%28a%2Cp%29%5Cmod%20p)
 EulerPrimalityTest
 ==================
 This repo contains codes for computing the Jacobi symbol and executing the Solovay-Strassen primality test to which I refer as [Euler Primality test](http://en.wikipedia.org/wiki/Solovay%E2%80%93Strassen_primality_test) because it uses the [Euler criterion](http://en.wikipedia.org/wiki/Euler%27s_criterion).
@@ -22,9 +20,9 @@ First, the program randomly picks base
 it computes  the 
 ![latex](http://latex.codecogs.com/gif.latex?Jacobi(a,p))
 , and then determines whether 
-![latex](http://latex.codecogs.com/gif.latex?a^{\frac{p-1}{2}}) 
+![latex](http://latex.codecogs.com/gif.latex?a%5E%7B%5Cfrac%7Bp-1%7D%7B2%7D%7D) 
 is equivalent to 
-![latex](http://latex.codecogs.com/gif.latex?Jacobi(a,p)&space;\mod&space;p)
+![latex](http://latex.codecogs.com/gif.latex?Jacobi%28a%2Cp%29%5Cmod%20p)
 . If it is equivalent then 
 ![latex](http://latex.codecogs.com/gif.latex?p) 
 is probably prime. If it is not equivalent than 
