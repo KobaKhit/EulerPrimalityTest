@@ -37,21 +37,38 @@ function jacobi(a, b) {
     return jac
 }
 
-// Tests an integer p for primality 
-function isPrimeEuler(p) {
+// Tests an integer p for primality
+function isPrimeEuler(p, method) {
     var power = (p - 1) / 2;
     var res = ""
-    a = ceil(random() - 0.5) + 2 // randomly picks base 2 or 3
-    baseMod = pow(a, power) % p;
-    var jacMod = jacobi(a, p) % p
-    if (baseMod == p - 1) {
-        baseMod = -1
-    }
-    if (baseMod != jacMod) {
-        res = "Not Prime"
-    }
-    else {
-        res = "is prime"
+    // Method 1: Randomly pick base between 1 and p
+    if (method = 1) {
+        a = round(random() * p) // randomly picks base between 1 and p
+        baseMod = pow(a, power) % p;
+        var jacMod = jacobi(a, p) % p
+        if (baseMod == p - 1) {
+            baseMod = -1
+        }
+        if (baseMod != jacMod) {
+            res = "Not Prime"
+        } else {
+            res = "is prime"
+        }
+    // Method 2: Check all bases between 1 and p
+    } else if (method == 2) {
+        for (var i = 1; i < p; i++) {
+            baseMod = pow(i, power) % p;
+            var jacMod = jacobi(i, p) % p
+            if (baseMod == p - 1) {
+                baseMod = -1
+            }
+            if (baseMod != jacMod) {
+                res = "Not Prime";
+                break
+            } else {
+                res = "is prime"
+            }
+        }
     }
     return res
 }
