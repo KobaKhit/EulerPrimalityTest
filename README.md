@@ -12,7 +12,7 @@ http://math.fau.edu/richman/
 `JacobiSymbol1.js` code was developed by Peter Strandmark in Matlab language. I retrieved, converted to javascipt, and modified the code from:
 http://www.mathworks.com/matlabcentral/fileexchange/24672-jacobi-and-legendre-symbol/content/jacobi.m
 
-`isEulerPrime.js` is the code for Euler's  primality test that.
+`isEulerPrime.js` is the code for Euler's  primality test.
 First, the program randomly picks base 
 ![latex](http://latex.codecogs.com/gif.latex?a)
 . Second, for a potential odd prime number 
