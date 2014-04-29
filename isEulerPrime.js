@@ -41,7 +41,7 @@ function jacobi(a, b) {
 function isPrimeEuler(p, method) {
     var power = (p - 1) / 2;
     var res = ""
-    // Method 1: Randomly pick base between 1 and p
+    // Method 1: Randomly pick one base between 1 and p
     if (method = 1) {
         a = round(random() * p) // randomly picks base between 1 and p
         baseMod = pow(a, power) % p;
