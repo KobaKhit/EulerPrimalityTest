@@ -13,7 +13,7 @@ http://math.fau.edu/richman/
 http://www.mathworks.com/matlabcentral/fileexchange/24672-jacobi-and-legendre-symbol/content/jacobi.m
 
 The primality test that uses Euler's criterion:
-> For an integer a and odd integer p, where 1<a<p, If [latex](http://latex.codecogs.com/gif.latex?a%5E%7B%5Cfrac%7Bp-1%7D%7B2%7D%7D%20%5Cequiv%20Jacobi%28a%2Cp%29%20%5Cmod%7Bp%7D) then p is probably prime. If p is composite, then there exists at least one integer a such that the congruence relation does not hold.
+> For an integer a and odd integer p, where 1<a<p, If ![latex](http://latex.codecogs.com/gif.latex?a%5E%7B%5Cfrac%7Bp-1%7D%7B2%7D%7D%20%5Cequiv%20Jacobi%28a%2Cp%29%20%5Cmod%7Bp%7D) then p is probably prime. If p is composite, then there exists at least one integer a such that the congruence relation does not hold.
 
 `isEulerPrime.js` is the code for Euler's  primality test.
 First, the program randomly picks base 
