@@ -11,10 +11,10 @@ function jacobi(a, b) {
     a = a % b;
     //Trivial cases
     if (a == 0) {
-        var jac = 0
+        var jac = 0;
     }
     else if (a == 1) {
-        var jac = 1
+        var jac = 1;
     }
     // a is even
     else if (a % 2 == 0) {
@@ -22,7 +22,7 @@ function jacobi(a, b) {
             var jac = jacobi(a / 2, b);
         }
         else {
-            var jac = -jacobi(a / 2, b)
+            var jac = -jacobi(a / 2, b);
         }
     }
     // a and b are odd
@@ -31,7 +31,7 @@ function jacobi(a, b) {
             jac = -jacobi(b, a);
         }
         else {
-            jac = jacobi(b, a)
+            jac = jacobi(b, a);
         }
     }
     return jac
@@ -40,28 +40,31 @@ function jacobi(a, b) {
 // Tests an integer p for primality
 function isPrimeEuler(p, method) {
     var power = (p - 1) / 2;
-    var res = ""
+    var res = "";
     // Method 1: Randomly pick one base between 1 and p
-    if (method = 1) {
+    if (method == 1) {
         a = round(random() * p) // randomly picks base between 1 and p
         baseMod = pow(a, power) % p;
-        var jacMod = jacobi(a, p) % p
         if (baseMod == p - 1) {
             baseMod = -1
         }
+        var jacMod = jacobi(a, p) % p;
+        
         if (baseMod != jacMod) {
             res = "Not Prime"
         } else {
             res = "is prime"
         }
+    }
     // Method 2: Check all bases between 1 and p
-    } else if (method == 2) {
+    if(method == 2){
         for (var i = 1; i < p; i++) {
-            baseMod = pow(i, power) % p;
-            var jacMod = jacobi(i, p) % p
+            var baseMod = pow(i, power) % p;
             if (baseMod == p - 1) {
                 baseMod = -1
             }
+            var jacMod = jacobi(i, p) % p;
+            
             if (baseMod != jacMod) {
                 res = "Not Prime";
                 break
@@ -70,5 +73,13 @@ function isPrimeEuler(p, method) {
             }
         }
     }
+    
     return res
+}
+
+// Checks odd numbers from 1 to 100 for primality using method 2 that is picking all integers as base in the range (1,p)
+
+for(var i = 1;i < 100; i += 2) {
+    var a = isPrimeEuler(i,1);
+    write(i); write(" "); writeln(a);
 }
