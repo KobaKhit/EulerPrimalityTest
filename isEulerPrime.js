@@ -78,7 +78,6 @@ function isPrimeEuler(p, method) {
 }
 
 // Checks odd numbers from 1 to 100 for primality using method 2 that is picking all integers as base in the range (1,p)
-
 for(var i = 1;i < 100; i += 2) {
     var a = isPrimeEuler(i,1);
     write(i); write(" "); writeln(a);
