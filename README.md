@@ -16,8 +16,10 @@ http://www.mathworks.com/matlabcentral/fileexchange/24672-jacobi-and-legendre-sy
 
 The primality test that uses Euler's criterion:
 > For an integer ![latex](http://latex.codecogs.com/gif.latex?a) and an odd integer ![latex](http://latex.codecogs.com/gif.latex?p), where ![latex](http://latex.codecogs.com/gif.latex?1%3Ca%3Cp), 
-If ![latex](http://latex.codecogs.com/gif.latex?a%5E%7B%5Cfrac%7Bp-1%7D%7B2%7D%7D%20%5Cequiv%20Jacobi%28a%2Cp%29%20%5Cmod%7Bp%7D) then ![latex](http://latex.codecogs.com/gif.latex?p) is probably prime. 
-If ![latex](http://latex.codecogs.com/gif.latex?p) is composite, then there exists at least one integer ![latex](http://latex.codecogs.com/gif.latex?a) such that the congruence relation does not hold.
+
+> If ![latex](http://latex.codecogs.com/gif.latex?a%5E%7B%5Cfrac%7Bp-1%7D%7B2%7D%7D%20%5Cequiv%20Jacobi%28a%2Cp%29%20%5Cmod%7Bp%7D) then ![latex](http://latex.codecogs.com/gif.latex?p) is probably prime. 
+
+> If ![latex](http://latex.codecogs.com/gif.latex?p) is composite, then there exists at least one integer  ![latex](http://latex.codecogs.com/gif.latex?a) such that the congruence relation does not hold.
 
 `isEulerPrime.js` is the code for Euler's  primality test.
 First, the program randomly picks base 
