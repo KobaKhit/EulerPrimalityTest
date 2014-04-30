@@ -32,7 +32,7 @@ is congruent to
 ![latex](http://latex.codecogs.com/gif.latex?p) 
 is probably prime. If it does not than 
 ![latex](http://latex.codecogs.com/gif.latex?p) 
-is composite. The accuracy of the test increases as you try several distinct bases 
+is composite. For prime numbers the congruence relation holds for all integers between 1 and the prime number. For non prime odd numbers the relation does not holds for some integers between 1 and the non prime number, but for some it does. s a result, the accuracy of the test increases as you try several distinct bases,i.e. integers between 1 and the odd number you check for primality.
 ![latex](http://latex.codecogs.com/gif.latex?a) 
 . If you check all bases from 1 to 
 ![latex](http://latex.codecogs.com/gif.latex?p) 
