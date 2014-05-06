@@ -12,7 +12,7 @@ http://math.fau.edu/richman/
 `JacobiSymbol1.js` code was developed by Peter Strandmark in Matlab language. I retrieved, converted to javascipt, and modified the code from:
 http://www.mathworks.com/matlabcentral/fileexchange/24672-jacobi-and-legendre-symbol/content/jacobi.m
 
-## Eulers criterion
+## Euler's criterion
 
 The primality test that uses Euler's criterion:
 > For an integer ![latex](http://latex.codecogs.com/gif.latex?a) and an odd integer ![latex](http://latex.codecogs.com/gif.latex?p), where ![latex](http://latex.codecogs.com/gif.latex?1%3Ca%3Cp), 
